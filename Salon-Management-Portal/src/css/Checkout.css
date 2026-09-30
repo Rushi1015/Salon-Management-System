@@ -1,0 +1,145 @@
+/* Styles for Checkout Page */
+.checkout-wrap {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .checkout-wrap {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.checkout-empty {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .checkout-layout {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.checkout-card {
+  background-color: #fff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 640px) {
+  .checkout-card {
+    padding: 1.5rem;
+  }
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  margin-bottom: 0.25rem;
+}
+
+.checkout-error {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.checkout-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .checkout-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.checkout-summary {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.checkout-item-name {
+  color: var(--color-gray-700);
+}
+
+.checkout-item-price {
+  font-weight: 500;
+  color: var(--color-gray-800);
+  white-space: nowrap;
+}
+
+.checkout-totals {
+  border-top: 1px solid var(--color-gray-200);
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.checkout-total-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-gray-600);
+}
+
+.checkout-total-final {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-gray-800);
+  margin-top: 0.25rem;
+}
